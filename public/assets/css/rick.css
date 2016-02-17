@@ -1,0 +1,159 @@
+body {
+	background-color: #f8f5f0;
+	font-size: 12pt;
+	color: #555;
+	font-family: "Lato", Arial;
+	overflow-x: hidden;
+}
+
+#logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin: -.3em 0;
+	width: 2.5em;
+	cursor: pointer;
+}
+
+#jumbotron {
+	background-image: url('/assets/img/city.jpg');
+	background-size: cover;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+.jumbo-cheese {
+	background-image: url('/assets/img/cheese.jpg') !important;
+	background-position: center center !important;
+}
+
+#jumbo-spacer {
+	height: 200px;
+}
+
+#jumbo-container {
+	text-align: center;
+	color: #fff;
+}
+
+#jumbo-text-box {
+	background-image: url('/assets/img/gray.png');
+	display: inline-block;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#jumbo-text {
+	position: relative;
+}
+
+#jumbo-header {
+	font-size: 3em;
+}
+
+#jumbo-sub-text {
+	font-size: 1.5em;
+}
+
+@media (max-height: 800px) {
+	#jumbotron {
+		height: 400px;
+	}
+	
+	#jumbo-spacer {
+		height: 150px;
+	}
+}
+
+.box-header {
+	font-weight: normal !important;
+	color: #999 !important;
+}
+
+#services,
+#about,
+#testimonials,
+#contact,
+#projects {
+	margin-top: 14px;
+}
+
+#modal-project-skills {
+	margin-top: 20px;
+}
+
+#scroll-fix {
+	height: 5000px;
+}
+
+#video-box {
+	text-align: center;
+}
+
+.hidden {
+	display: none !important;
+}
+
+#toggle-menu {
+	cursor: pointer;
+	color: #000;
+	top: 12px;
+	right: 5px;
+	position: absolute;
+}
+
+@media(min-width: 768px) {
+	#toggle-menu {
+		display: none;
+	}
+}
+
+.text-red {
+	color: #df0000;
+}
+
+.dark-blue {
+	color: #3a5795;
+}
+
+.medium-blue {
+	color: #1a85bc;
+}
+
+.light-blue {
+	color: #55acee;
+}
+
+.default-text {
+	color: #555 !important;
+}
+
+.text-green {
+	color: #9c0;
+}
+
+.move-left {
+	position: absolute;
+	left: -99999px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+#imagine-text {
+	margin-bottom: 30px;
+}
+
+#responseMessage .message {
+	margin-bottom: 15px;
+}
+
+footer {
+	padding: 35px 15px;
+}
+
+#footer-bug-free {
+	color: #3a5795;
+	font-size: 1.2em;
+}

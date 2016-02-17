@@ -1,0 +1,11 @@
+{
+    "name": "cozylife/rickmacgillis",
+    "type": "project",
+    "description" : "The source for the rickmacgillis.com website",
+    "keywords": ["rick mac gillis", "website", "application", "website", "PHP"],
+    "license": "Apache 2.0",
+    "require": {
+        "php": ">=5.5.9",
+        "PHPMailer/PHPMailer": "~5.2.14"
+    }
+}
