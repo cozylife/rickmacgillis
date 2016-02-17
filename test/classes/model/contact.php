@@ -62,25 +62,4 @@ class ContactTest extends \PHPUnit_Framework_TestCase
 	
 		$this->assertSame('bad email', $response->errorType);
 	}
-	
-	public function testCanGetJsonForSentMessage()
-	{
-		$contact = new \Rick\Model\Contact();
-		\Rick\CSRF::regenerateToken();
-	
-		$_POST['csrf'] = \Rick\CSRF::getToken();
-		$_SERVER['HTTP_X_REQUESTED_WITH'] = 'XMLHttpRequest';
-	
-		$required = ['first-name', 'last-name', 'email', 'job-title', 'business', 'business-website'];
-		foreach ($required as $postKey) {
-			$_POST[$postKey] = 'blah';
-		}
-		
-		$_POST['email'] = 'test@example.com';
-		$contact->handleFormSubmission();
-	
-		$response = json_decode($contact->getResponseJson());
-	
-		$this->assertSame('success', $response->errorType);
-	}
 }
