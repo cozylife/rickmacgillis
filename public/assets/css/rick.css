@@ -90,6 +90,25 @@ body {
 	text-align: center;
 }
 
+#vsl-video {
+	width: 560px;
+	height: 315px;
+}
+
+@media(max-width: 640px) {
+	#vsl-video {
+		width: 350px;
+		height: 197px;
+	}
+}
+
+@media(max-width: 430px) {
+	#vsl-video {
+		width: 250px;
+		height: 141px;
+	}
+}
+
 .hidden {
 	display: none !important;
 }
@@ -109,19 +128,19 @@ body {
 }
 
 .text-red {
-	color: #df0000;
+	color: #df0000 !important;
 }
 
 .dark-blue {
-	color: #3a5795;
+	color: #3a5795 !important;
 }
 
 .medium-blue {
-	color: #1a85bc;
+	color: #1a85bc !important;
 }
 
 .light-blue {
-	color: #55acee;
+	color: #55acee !important;
 }
 
 .default-text {
@@ -129,7 +148,49 @@ body {
 }
 
 .text-green {
+	color: #9c0 !important;
+}
+
+.quote {
+	font-family: arial;
+	font-size: 12pt;
+	font-style: italic;
+}
+
+.quote-source {
+	text-align: right;
+}
+
+#small-bam-text {
+	color: #3a5795;
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+
+#bam-text {
 	color: #9c0;
+	font-size: 3em;
+	margin-bottom: 16px;
+}
+
+#blue-you-bam {
+	color: #55acee;
+	font-size: 1.2em;
+	position: absolute;
+	margin-bottom: 16px;
+}
+
+#blue-bam-superpowers {
+	color: #55acee;
+	font-size: 1.2em;
+	position: absolute;
+	margin-bottom: 16px;
+}
+
+#tell-me-a-story {
+	color: #3a5795;
+	font-size: 1.2em;
 }
 
 .move-left {

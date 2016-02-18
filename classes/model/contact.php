@@ -112,7 +112,11 @@ class Contact
 			$this->emailSentStatus = true;
 			
 		} catch (\Rick\Driver\MessageNotSentException $e) {
+			
 			$this->emailSentStatus = false;
+			$logger = \Rick\Log::getChannel('contact');
+			$logger->addWarning($e->getMessage());
+			
 		}
 	}
 	

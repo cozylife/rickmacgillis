@@ -1,17 +1,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Rick Mac Gillis - Full-Stack Web Developer since 2003</title>
+	<title>Multiple Listing Service for the retail market - Rick Mac Gillis</title>
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Lower Marketing and Sales Costs with Your Own API" />
-	<meta property="og:description" content="Reclaim your free time. Have other websites sell your products to lower your marketing costs by over 500%. Hire more employees with the money you save, so you can go on vacation." />
+	<meta property="og:title" content="Sell your products through thousands of retailers" />
+	<meta property="og:description" content="Reclaim your free time. Have thousands of retailers market your products for you, and lower your marketing costs by over 500%. Hire more employees with the money you save, so you can go on vacation." />
 	<meta property="og:url" content="https://rickmacgillis.com/" />
 	<meta property="og:site_name" content="Rick Mac Gillis" />
 	<meta property="og:image" content="https://rickmacgillis.com/assets/img/more-spare-time.jpg" />
 	<meta name="twitter:card" content="summary_large_image"/>
-	<meta name="twitter:title" content="Lower Marketing and Sales Costs with Your Own API"/>
-	<meta name="twitter:description" content="Reclaim your free time. Have other websites sell your products to lower your marketing costs by over 500%. Hire more employees with the money you save, so you can go on vacation."/>
+	<meta name="twitter:title" content="Sell your products through thousands of retailers"/>
+	<meta name="twitter:description" content="Reclaim your free time. Have thousands of retailers market your products for you, and lower your marketing costs by over 500%. Hire more employees with the money you save, so you can go on vacation."/>
 	<meta name="twitter:site" content="@MyCozyLife"/>
 	<meta name="twitter:image" content="https://rickmacgillis.com/assets/img/more-spare-time.jpg"/>
 	<meta name="twitter:creator" content="@mycozylife"/>
@@ -21,6 +21,7 @@
 	<meta name="alexaVerifyID" content="BzFJlw4QhtQ8omhivyK4Ex3euFk"/>
 	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css" />
 	<link rel="stylesheet" type="text/css" href='//fonts.googleapis.com/css?family=Lato' />
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" />
 	<link rel="stylesheet" type="text/css" href="/assets/css/rick.css" />
 	<noscript>
 		<style>
