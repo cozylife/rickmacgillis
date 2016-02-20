@@ -17,6 +17,12 @@ class Config
 		return static::getValueFromDotNotation($item);
 	}
 	
+	public static function set($item, $value)
+	{
+		$instance = static::getInstance();
+		$instance->configs['dot-notated'][$item] = $value;
+	}
+	
 	private static function getValueFromDotNotation($dotNotated)
 	{
 		try {

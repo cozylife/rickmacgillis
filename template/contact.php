@@ -123,7 +123,6 @@
 				</div>
 			</div>
 			<input type="text" name="username" id="username" class="move-left" />
-			<input type="hidden" name="csrf" value="<?= $pageData['csrf']; ?>" id="csrf" />
 			<div id="responseMessage"></div>
 			<button class="ui olive button" id="contact-submit">Request a Consultation</button>
 		</form>

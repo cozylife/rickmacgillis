@@ -16,14 +16,19 @@ class Controller
 	
 	public static function page_index()
 	{
-		$pageData = [
-			'skillTable'	=> Skills::getSkillTableArray(),
-			'skillColors'	=> Skills::getSkillColorsArray(),
-			'testimonials'	=> Model\Testimonials::getTestimonials(),
-			'projects'		=> Model\Projects::getProjects(),
-			'csrf'			=> CSRF::getToken(),
-		];
-		View::displayPage('index', $pageData);
+		$pageData = [];
+		if (Cache::canGetCachedDataForFile('index') === false) {
+			
+			$pageData = [
+				'skillTable'	=> Skills::getSkillTableArray(),
+				'skillColors'	=> Skills::getSkillColorsArray(),
+				'testimonials'	=> Model\Testimonials::getTestimonials(),
+				'projects'		=> Model\Projects::getProjects()
+			];
+			
+		}
+		
+		echo View::getPageContent('index', $pageData);
 	}
 	
 	public static function page_contact()
@@ -41,6 +46,6 @@ class Controller
 	
 	public static function page_404()
 	{
-		View::displayPage('404');
+		echo View::getPageContent('404');
 	}
 }

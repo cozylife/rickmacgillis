@@ -8,7 +8,7 @@ class Email
 	
 	public function __construct()
 	{
-		$driverName = '\\Rick\\Driver\\' . Config::get('email.driver');
+		$driverName = '\\Rick\\EmailDriver\\' . Config::get('email.driver');
 		$this->driver = new $driverName;
 	}
 	

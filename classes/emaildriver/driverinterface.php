@@ -1,6 +1,6 @@
 <?php
 
-namespace Rick\Driver;
+namespace Rick\EmailDriver;
 
 interface DriverInterface
 {

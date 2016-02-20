@@ -1,19 +1,26 @@
+<?php
+	$description = "Reclaim your free time. Have thousands of retailers market your products for you, and lower your marketing costs by over 500%. Hire " .
+		"more employees with the money you save, so you can go on vacation.";
+	$socialTitle = "Sell your products through thousands of retailers";
+	$socialImage = "https://rickmacgillis.com/assets/img/more-spare-time.jpg";
+?>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Multiple Listing Service for the retail market - Rick Mac Gillis</title>
+	<title>Multiple Listing Service API for the retail market - Rick Mac Gillis</title>
+	<meta name="description" content="<?= $description; ?>" />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Sell your products through thousands of retailers" />
-	<meta property="og:description" content="Reclaim your free time. Have thousands of retailers market your products for you, and lower your marketing costs by over 500%. Hire more employees with the money you save, so you can go on vacation." />
+	<meta property="og:title" content="<?= $socialTitle; ?>" />
+	<meta property="og:description" content="<?= $description; ?>" />
 	<meta property="og:url" content="https://rickmacgillis.com/" />
 	<meta property="og:site_name" content="Rick Mac Gillis" />
-	<meta property="og:image" content="https://rickmacgillis.com/assets/img/more-spare-time.jpg" />
+	<meta property="og:image" content="<?= $socialImage; ?>" />
 	<meta name="twitter:card" content="summary_large_image"/>
-	<meta name="twitter:title" content="Sell your products through thousands of retailers"/>
-	<meta name="twitter:description" content="Reclaim your free time. Have thousands of retailers market your products for you, and lower your marketing costs by over 500%. Hire more employees with the money you save, so you can go on vacation."/>
+	<meta name="twitter:title" content="<?= $socialTitle; ?>"/>
+	<meta name="twitter:description" content="<?= $description; ?>"/>
 	<meta name="twitter:site" content="@MyCozyLife"/>
-	<meta name="twitter:image" content="https://rickmacgillis.com/assets/img/more-spare-time.jpg"/>
+	<meta name="twitter:image" content="<?= $socialImage; ?>"/>
 	<meta name="twitter:creator" content="@mycozylife"/>
 	<meta name="msvalidate.01" content="4098BD7E5703AF1C67496F41DBDDF438" />
 	<meta name="google-site-verification" content="rtliWu9Xs67ByYDMMtNyLC6WLWKCBqWECILBvi7U8u8" />

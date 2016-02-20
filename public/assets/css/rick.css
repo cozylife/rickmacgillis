@@ -48,11 +48,17 @@ body {
 }
 
 #jumbo-header {
-	font-size: 3em;
+	font-size: 2em;
 }
 
 #jumbo-sub-text {
-	font-size: 1.5em;
+	font-size: 1.1em;
+}
+
+@media (max-width: 568px) {
+	#jumbo-sub-text-break {
+		display: none;
+	}
 }
 
 @media (max-height: 800px) {

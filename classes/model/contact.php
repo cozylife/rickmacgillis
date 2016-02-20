@@ -58,10 +58,7 @@ class Contact
 	
 	private function throwExceptionIfBadCsrf()
 	{
-		if (
-			\Rick\CSRF::isValidToken(\Rick\Input::post('csrf')) === false ||
-			\Rick\CSRF::isPossibleAjaxRequest() === false
-		) {
+		if (\Rick\CSRF::isPossibleAjaxRequest() === false) {
 			throw new ContactBadCsrfException();
 		}
 	}
@@ -169,8 +166,7 @@ class Contact
 			'header'		=> $this->header,
 			'message'		=> $this->message,
 			'responseType'	=> $this->responseType,
-			'errorType'		=> $this->errorType,
-			'csrf'			=> \Rick\CSRF::getToken()
+			'errorType'		=> $this->errorType
 		];
 	}
 }

@@ -36,7 +36,6 @@ var gui = (function () {
 		$.post('/contact', $('#contact-form').serialize())
 		.done(function (e) {
 			var response = JSON.parse(e);console.log(response);
-			$('#csrf').val(response.csrf);
 			$('#responseMessage').html(getContactMessageBoxHtml(response.header, response.message, response.responseType));
 			if (typeof successCallback === 'function' && response.responseType === 'positive') {
 				successCallback();

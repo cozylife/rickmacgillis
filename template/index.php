@@ -7,8 +7,9 @@
 				<div id="jumbo-spacer"></div>
 				<div id="jumbo-text-box">
 					<div id="jumbo-text">
-						<h1 id="jumbo-header">30-Day Bug-Free Guarantee!</h3>
-						<p id="jumbo-sub-text">If you find a bug in my work within 30 days of the <br>project's completion, I'll repair it at no additional charge.</p>
+						<h1 id="jumbo-header">Sell your products through thousands of retailers</h3>
+						<p id="jumbo-sub-text">The Real-Estate market has used Multiple Listing Services since the<br id="jumbo-sub-text-break">
+						late 1800s to boost their profits. Now I'm giving you that same power.</p>
 					</div>
 				</div>
 			</div>

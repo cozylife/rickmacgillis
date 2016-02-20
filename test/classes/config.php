@@ -1,36 +1,38 @@
 <?php
 
+use \Rick\Config;
+
 class ConfigTest extends \PHPUnit_Framework_TestCase
 {
 	public function testCanGetFirstLevelValueFromConfigFile()
 	{
-		$this->assertSame('value', \Rick\Config::get('dummy.test'));
+		$this->assertSame('value', Config::get('dummy.test'));
 	}
 	
 	public function testCanGetSecondLevelValueFromConfigFile()
 	{
-		$this->assertSame('anotherValue', \Rick\Config::get('dummy.an-array.key'));
+		$this->assertSame('anotherValue', Config::get('dummy.an-array.key'));
 	}
 	
 	public function testCanGetArrayValueFromConfigFile()
 	{
-		$this->assertSame(['key' => 'anotherValue'], \Rick\Config::get('dummy.an-array'));
+		$this->assertSame(['key' => 'anotherValue'], Config::get('dummy.an-array'));
 	}
 	
 	public function testCanGetCachedValues()
 	{
-		\Rick\Config::get('dummy.test');
-		$this->assertSame('value', \Rick\Config::get('dummy.test'));
+		Config::get('dummy.test');
+		$this->assertSame('value', Config::get('dummy.test'));
 		
-		\Rick\Config::get('dummy.an-array.key');
-		$this->assertSame('anotherValue', \Rick\Config::get('dummy.an-array.key'));
+		Config::get('dummy.an-array.key');
+		$this->assertSame('anotherValue', Config::get('dummy.an-array.key'));
 	}
 	
 	public function testWillThrowExceptionWhenInvalidKey()
 	{
 		try {
 			
-			\Rick\Config::get('dummy.doesntExist');
+			Config::get('dummy.doesntExist');
 			$this->fail();
 			
 		} catch (\Rick\ConfigInvalidKeyException $e) {}
@@ -40,7 +42,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
 	{
 		try {
 			
-			\Rick\Config::get('doesntExist.test');
+			Config::get('doesntExist.test');
 			$this->fail();
 			
 		} catch (\Rick\ConfigFileNotFoundException $e) {}
@@ -50,9 +52,17 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
 	{
 		try {
 			
-			\Rick\Config::get('blah');
+			Config::get('blah');
 			$this->fail();
 			
 		} catch (\Rick\ConfigFileNotFoundException $e) {}
+	}
+	
+	public function testCanSetValueInConfig()
+	{
+		$this->assertSame('value', Config::get('dummy.test'));
+		
+		Config::set('dummy.test', 'new value');
+		$this->assertSame('new value', Config::get('dummy.test'));
 	}
 }

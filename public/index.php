@@ -10,7 +10,7 @@ if (empty($page)) {
 	$page = 'index';
 }
 
-//header("strict-transport-security: max-age=15552000; includeSubDomains; preload");
+header("strict-transport-security: max-age=2592000; includeSubDomains; preload");
 header("x-content-security-policy: default-src https:;script-src 'unsafe-inline' 'unsafe-eval' https:;style-src 'unsafe-inline' https:;");
 header("x-content-type-options: nosniff");
 header("x-frame-options: DENY");
