@@ -20,7 +20,7 @@
 					<h1 class="ui header">404 - OH GAWD!</h1>
 				</div>
 				<div class="ui vertical segment">
-					What happened? Oh crap, oh crap, oh crap! Oh, I know! PAGE NOT FOUND! <--- No cheese for you!
+					What happened? Oh crap, oh crap, oh crap! Oh, I know! PAGE NOT FOUND! <--- No cheese for you! Now, <a href="/">go home</a>.
 				</div>
 			</div>
 		</div>
