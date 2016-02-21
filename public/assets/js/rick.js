@@ -48,13 +48,9 @@ $('#contact-submit').click(function (e)
 {
 	e.preventDefault();
 	if ($('#username').val() === '') {
-		$('#contact-form').addClass('loading');
-		
 		gui.submitContact(function () {
 			tracking.track('Sent Contact Form');
 		});
-		
-		$('#contact-form').removeClass('loading');
 	}
 });
 

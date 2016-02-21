@@ -16,8 +16,8 @@ class Cache
 	
 	public static function getCachedPage($cacheFile)
 	{
-		$fullPath = static::getFullPathForCachedFile($cacheFile);
 		static::throwIfFileDoesNotExist($cacheFile);
+		$fullPath = realpath(static::getFullPathForCachedFile($cacheFile));
 		return file_get_contents($fullPath);
 	}
 	

@@ -25,5 +25,9 @@ try {
 	\Rick\Controller::page('404');
 	
 } catch (\Exception $e) {
+	
 	echo 'An error occurred.';
+	$log = \Rick\Log::getChannel('errors');
+	$log->addEmergency($e->getMessage() . ' ' . $e->getTraceAsString());
+	
 }

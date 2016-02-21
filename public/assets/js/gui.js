@@ -33,6 +33,7 @@ var gui = (function () {
 	
 	function submitContact(successCallback)
 	{
+		$('#contact-form').addClass('loading');
 		$.post('/contact', $('#contact-form').serialize())
 		.done(function (e) {
 			var response = JSON.parse(e);
@@ -40,12 +41,14 @@ var gui = (function () {
 			if (typeof successCallback === 'function' && response.responseType === 'positive') {
 				successCallback();
 			}
+			$('#contact-form').removeClass('loading');
 		})
 		.fail(function (e) {
 			$('#responseMessage').html(getContactMessageBoxHtml(
 				'An Error Occurred',
 				'Please try resending the message or use this form to contact support. ;) Oh, alright, get in touch with me on UpWork to report the bug.',
 				'negative'));
+			$('#contact-form').removeClass('loading');
 		});
 	}
 	
