@@ -98,10 +98,11 @@ Temporary Items
 .apdisk
 
 #Rick
-/config/*.php
-/log/*
-/cache/*
+/rick/config/*.php
+/ric/log/*
+/ric/cache/*
 
-#Don't ignore the .gitkeep files
+#Don't ignore these files
 !.gitkeep
-!/config/dummy.php
+!/rick/config/dummy.php
+!/rick/config/sample/*.php
