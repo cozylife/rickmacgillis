@@ -99,8 +99,8 @@ Temporary Items
 
 #Rick
 /rick/config/*.php
-/ric/log/*
-/ric/cache/*
+/rick/log/*
+/rick/cache/*
 
 #Don't ignore these files
 !.gitkeep
